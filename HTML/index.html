@@ -25,49 +25,54 @@
     </div>
   </div>
   <!--formulário-->
+
+  <!--propiétario da reserva-->
   <div id="form" class="hidden">
     <div class="reserveFormName">
       <label for="reserveName">Nome:</label>
-      <input type="text" name="" id="reserveName">
+      <input type="text" name="" id="reservationName">
     </div>
 
+    <!--data da reserva-->
     <div class="reserveFormDate">
       <label for="reserveDate">Data:</label>
       <input 
         type="date" 
         name="dateReserve"
-        id="reserveDate"
+        id="bookingDate"
       >
     </div>
 
+    <!--hora inicial da reserva-->
     <div class="reserveFormHourInitial">
       <label for="reserveHourInitial">De:</label>
       <input 
         type="time" 
         name="" 
-        id="reserveHourInitial"
+        id="bookingStartTime"
       >
     </div>
 
+    <!--hora final da reserva-->
     <div class="reserveFormHourFinal">
-      <label for="reserveHourFinal">Até:</label>
+      <label for="bookingEndTime">Até:</label>
       <input 
         type="time" 
         name="" 
-        id="reserveHourFinal"
+        id="bookingEndTime"
       >
     </div>
 
+    <!--referência do projetor-->
     <div class="reserveFormProjector">
-      <label for="reserveProjector">Número do projetor:</label>
-      <select 
-        name="reserveProjector" id="reserveProjector">
-        <option value="001">001</option>
-        <option value="002">002</option>
-        <option value="003">003</option>
-        <option value="004">004</option>
-        <option value="005">005</option>
-      </select>
+      <label for="reserveProjector">Referência do projetor:</label>
+      <select name="reserveProjector" id="reserveProjector"></select>
+    </div>
+
+    <!--referência da localização-->
+    <div class="reserveFormLocation">
+      <label for="reserveLocation">Sala referente:</label>
+      <select name="reserveLocation" id="reserveLocation"></select>
     </div>
 
     <div class="reserveFormButton">
