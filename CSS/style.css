@@ -8,4 +8,84 @@
   display: none;
 }
 
+#header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+}
+#header #menu {
+  display: none;
+}
+
+.reserveBtnContainer {
+  display: flex;
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+}
+.reserveBtnContainer button {
+  padding: 10px 11px;
+  border-radius: 100px;
+}
+
+.on {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.on #formContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  border: solid 1px #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4156862745);
+  padding: 2em;
+  max-width: 350px;
+  max-height: 350px;
+  margin: auto;
+}
+.on #formContainer div {
+  margin: 4px 0;
+}
+.on #formContainer div button {
+  border-radius: 5px;
+  padding: 4px;
+  font-weight: bold;
+}
+.on #formContainer div button span {
+  display: flex;
+  margin: auto 0;
+}
+
+#reservationList li {
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+#reservationList li button {
+  border-radius: 5px;
+  padding: 2px 0;
+}
+
+#historic {
+  opacity: 100;
+}
+
+@media (max-width: 770px) {
+  #header #menu {
+    display: flex;
+  }
+  #historic {
+    opacity: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

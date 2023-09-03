@@ -4,15 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Principal</title>
-  <!--JavaScript link-->
-  <script src="../JS/script.js" defer></script>
   <!--CSS link-->
   <link rel="stylesheet" href="../CSS/style.css">
+  <!--google icons-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--JavaScript link-->
+  <script src="../JS/script.js" defer></script>
 </head>
 <body>
   <div id="header">
+    <div id="menu">
+      <button id="menuButton">
+        <span id="menuIcon" class="material-symbols-outlined">
+          menu
+        </span>
+      </button>
+    </div>
     <div id="pageName">
-      <h1>reserve projector</h1>
+      <h1>YourReserva</h1>
     </div>
   </div>
   <!--conteiner de cartões de reservas-->
@@ -21,73 +30,92 @@
       <ul id="reservationList"></ul>
     </div>
     <div class="reserveBtnContainer">
-      <button id="openForm">+</button>
+      <button id="openForm">
+        <span class="material-symbols-outlined">
+          add
+        </span>
+      </button>
     </div>
   </div>
   <!--formulário-->
 
   <!--propiétario da reserva-->
   <div id="form" class="hidden">
-    <div class="reserveFormName">
-      <label for="reserveName">Nome:</label>
-      <input type="text" name="" id="reservationName">
-    </div>
+    <div id="formContainer">
+      <div class="reserveFormName">
+        <label for="reserveName">Nome:</label>
+        <input type="text" name="" id="reservationName">
+      </div>
 
-    <!--data da reserva-->
-    <div class="reserveFormDate">
-      <label for="reserveDate">Data:</label>
-      <input 
-        type="date" 
-        name="dateReserve"
-        id="bookingDate"
-      >
-    </div>
+      <!--data da reserva-->
+      <div class="reserveFormDate">
+        <label for="reserveDate">Data:</label>
+        <input 
+          type="date" 
+          name="dateReserve"
+          id="bookingDate"
+        >
+      </div>
 
-    <!--hora inicial da reserva-->
-    <div class="reserveFormHourInitial">
-      <label for="reserveHourInitial">De:</label>
-      <input 
-        type="time" 
-        name="" 
-        id="bookingStartTime"
-      >
-    </div>
+      <!--hora inicial da reserva-->
+      <div class="reserveFormHourInitial">
+        <label for="reserveHourInitial">De:</label>
+        <input 
+          type="time" 
+          name="" 
+          id="bookingStartTime"
+        >
+      </div>
 
-    <!--hora final da reserva-->
-    <div class="reserveFormHourFinal">
-      <label for="bookingEndTime">Até:</label>
-      <input 
-        type="time" 
-        name="" 
-        id="bookingEndTime"
-      >
-    </div>
+      <!--hora final da reserva-->
+      <div class="reserveFormHourFinal">
+        <label for="bookingEndTime">Até:</label>
+        <input 
+          type="time" 
+          name="" 
+          id="bookingEndTime"
+        >
+      </div>
 
-    <!--referência do projetor-->
-    <div class="reserveFormProjector">
-      <label for="reserveProjector">Referência do projetor:</label>
-      <select name="reserveProjector" id="reserveProjector"></select>
-    </div>
+      <!--referência do projetor-->
+      <div class="reserveFormProjector">
+        <label for="reserveProjector">Referência do projetor:</label>
+        <select name="reserveProjector" id="reserveProjector"></select>
+      </div>
 
-    <!--referência da localização-->
-    <div class="reserveFormLocation">
-      <label for="reserveLocation">Sala referente:</label>
-      <select name="reserveLocation" id="reserveLocation"></select>
-    </div>
+      <!--referência da localização-->
+      <div class="reserveFormLocation">
+        <label for="reserveLocation">Sala referente:</label>
+        <select name="reserveLocation" id="reserveLocation"></select>
+      </div>
 
-    <div class="reserveFormButton">
-      <input 
-        type="button" 
-        value="Reservar"
-        id="btnAddReserve"
-      >
+      <div class="reserveFormButton">
+        <button id="btnAddReserve">
+          reservar
+        </button>
+      </div>
+
+      <div class="returnContainer">
+        <button id="closeForm">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+      </div>
     </div>
-    <div class="returnContainer">
-      <button id="closeForm">fechar</button>
+  </div>
+
+  <div id="historic">
+    <div id="historicContainer">
+      <ul id="historicList">
+        <li>ggg</li>
+        <li>ggg</li>
+        <li>ggg</li>
+      </ul>
     </div>
   </div>
   <div id="footer">
-    <h4>criado por aluno</h4>
+    
   </div>
 </body>
 </html>
